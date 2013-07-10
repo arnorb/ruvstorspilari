@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Stækkari fyrir RÚV spilarann",
+  "description": "Lætur RÚV spilarann fylla út í breidd síðunnar.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.ruv.is/*"],
+      "js": ["jquery.js", "myscript.js"]
+    }
+  ],
+
+  "permissions": [
+    "http://www.ruv.is/"
+  ]
+}
