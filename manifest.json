@@ -3,16 +3,13 @@
 
   "name": "Stækkari fyrir RÚV spilarann",
   "description": "Lætur RÚV spilarann fylla út í breidd síðunnar.",
-  "version": "1.0",
+  "version": "1.1",
 
   "content_scripts": [
     {
-      "matches": ["http://www.ruv.is/*"],
+      "matches": ["http://ruv.is/ruv*","http://ruv.is/sarpurinn*","http://www.ruv.is/ruv*","http://www.ruv.is/sarpurinn*"],
+      "css": ["mystyles.css"],
       "js": ["jquery.js", "myscript.js"]
     }
-  ],
-
-  "permissions": [
-    "http://www.ruv.is/"
   ]
 }
